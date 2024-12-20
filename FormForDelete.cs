@@ -12,13 +12,17 @@ namespace C_sharp_Lab7
 {
     public partial class FormForDelete : Form
     {
+        // Текст, введенный пользователем
         public static string text { get; set; }
+
+        // Конструктор формы
         public FormForDelete()
         {
             InitializeComponent();
             AcceptButton = button1;
         }
 
+        // Обработчик события KeyPress для textBox1, чтобы разрешить ввод только цифр
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -28,6 +32,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Обработчик события нажатия на кнопку "OK"
         private void button1_Click(object sender, EventArgs e)
         {
             FormForDelete.text = textBox1.Text; 

@@ -11,13 +11,22 @@ using System.Xml.Serialization;
 
 namespace C_sharp_Lab7
 {
+    // Форма для добавления и редактирования информации о студенте
     public partial class StudentForm : Form
     {
-
+        // Статическое свойство для хранения текущего студента
         public static Student student { get; set; }
+
+        // Поле для отслеживания изменений
         private bool changed = false;
+
+        // Свойство для получения значения поля changed
         public bool Changed { get { return changed; } }
+
+        // Поле для определения режима редактирования
         public bool isEdit;
+
+        // Конструктор по умолчанию
         public StudentForm()
         {
             InitializeComponent();
@@ -25,6 +34,8 @@ namespace C_sharp_Lab7
             StudentForm.student = new Student();
             this.isEdit = false;
         }
+
+        // Конструктор для режима редактирования
         public StudentForm(Student student)
         {
             InitializeComponent();
@@ -33,6 +44,7 @@ namespace C_sharp_Lab7
             this.isEdit = true;
         }
 
+        // Обработчик события KeyPress для textBoxGroup, чтобы разрешить ввод только цифр
         private void textBoxGroup_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
@@ -40,6 +52,7 @@ namespace C_sharp_Lab7
                 e.Handled = true;
         }
 
+        // Обработчик события загрузки формы
         private void StudentForm_Load(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
@@ -49,9 +62,9 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для открытия формы в режиме редактирования
         private void OpenForEditing()
         {
-
             textBoxFIO.Text = student.FIO;
             textBoxGroup.Text = student.Group.ToString();
             switch (student.Course)
@@ -81,6 +94,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для сохранения информации о студенте
         private bool SaveStudent()
         {
             student.FIO = textBoxFIO.Text;
@@ -94,14 +108,11 @@ namespace C_sharp_Lab7
 
             if (radioButton1.Checked)
                 student.Course = 1;
-            else
-                if (radioButton2.Checked)
+            else if (radioButton2.Checked)
                 student.Course = 2;
-            else
-                if (radioButton3.Checked)
+            else if (radioButton3.Checked)
                 student.Course = 3;
-            else
-                if (radioButton4.Checked)
+            else if (radioButton4.Checked)
                 student.Course = 4;
 
             if (radioButtonBudget.Checked)
@@ -129,17 +140,17 @@ namespace C_sharp_Lab7
                     return false;
                 }
                 student.Exams[i].Mark = mark;
-
             }
             return true;
-
         }
 
+        // Обработчик события нажатия кнопки "Отмена"
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // Обработчик события нажатия кнопки "Сохранить"
         private void buttonSave_Click(object sender, EventArgs e)
         {
             if (SaveStudent())
@@ -149,6 +160,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Обработчик события изменения состояния RadioButton
         private void radioButton_CheckedChanged(object sender, EventArgs e)
         {
             int course = Convert.ToInt32(((RadioButton)sender).Text);
@@ -162,11 +174,7 @@ namespace C_sharp_Lab7
                 if (i % 5 == 0)
                     dataGridView1.Rows[i].Cells[1].Value = (i / 5 + 1).ToString();
             }
-           /* for (int i = dataGridView1.Rows.Count - 1; i >examNum-1 ; i--)
-            {
-                dataGridView1.Rows.RemoveAt(i);
-            }*/
-
         }
     }
 }
+

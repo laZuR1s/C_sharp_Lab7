@@ -13,30 +13,40 @@ using System.Windows.Forms;
 
 namespace C_sharp_Lab7
 {
+    // Форма для отображения списка студентов
     public partial class StudentsListForm : Form
     {
+        // Конструктор формы
         public StudentsListForm()
         {
             InitializeComponent();
         }
 
+        // Поле для хранения выбранного номера студента
         private int selectedNumber = -1;
 
+        // Поле для хранения списка всех студентов
         private AllStudents studentsList = new AllStudents();
 
+        // Поле для хранения имени файла
         private string fileName = string.Empty;
 
+        // Перечисление типов файлов
         private enum FileType
         {
             None, Txt, Bin, Xml
         }
 
+        // Поле для хранения типа файла
         private FileType fileType = FileType.None;
+
+        // Обработчик события нажатия на пункт меню "Помощь"
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Найти количество студенто на каждом курсе у которых нет задолженностей.", "Условие задачи", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Найти количество студентов на каждом курсе у которых нет задолженностей.", "Условие задачи", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        // Обработчик события нажатия на пункт меню "Открыть"
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listBoxAllStudents.Items.Clear();
@@ -68,10 +78,10 @@ namespace C_sharp_Lab7
                         ShowList();
                         break;
                 }
-
             }
         }
 
+        // Метод для отображения списка студентов
         public void ShowList(int index = 0)
         {
             var cnt = listBoxAllStudents.Items.Count;
@@ -84,9 +94,9 @@ namespace C_sharp_Lab7
                 listBoxAllStudents.Items.Add((i + 1).ToString() + ". " + studentsList.Students[i].ToListBox());
             }
             listBoxAllStudents.Enabled = true;
-
         }
 
+        // Обработчик события нажатия на пункт меню "Создать"
         private void createToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var dlg = new SaveFileDialog();
@@ -103,6 +113,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Обработчик события нажатия на пункт меню "Сохранить"
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             switch (fileType)
@@ -112,19 +123,20 @@ namespace C_sharp_Lab7
                     break;
                 case FileType.Txt:
                     studentsList.SaveTxtFile(fileName);
-                    MessageBox.Show($"Файл{fileName.Substring(fileName.LastIndexOf("//") + 1)} успешно сохранен");
+                    MessageBox.Show($"Файл {fileName.Substring(fileName.LastIndexOf("//") + 1)} успешно сохранен");
                     break;
                 case FileType.Bin:
                     studentsList.SaveBinFile(fileName);
-                    MessageBox.Show($"Файл{fileName.Substring(fileName.LastIndexOf("//") + 1)} успешно сохранен");
+                    MessageBox.Show($"Файл {fileName.Substring(fileName.LastIndexOf("//") + 1)} успешно сохранен");
                     break;
                 case FileType.Xml:
                     studentsList.SaveXmlFile(fileName);
-                    MessageBox.Show($"Файл{fileName.Substring(fileName.LastIndexOf("//") + 1)} успешно сохранен");
+                    MessageBox.Show($"Файл {fileName.Substring(fileName.LastIndexOf("//") + 1)} успешно сохранен");
                     break;
             }
         }
 
+        // Обработчик события нажатия на пункт меню "Сохранить как"
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var dlg = new SaveFileDialog();
@@ -152,11 +164,11 @@ namespace C_sharp_Lab7
 
                     default:
                         break;
-
                 }
             }
         }
 
+        // Обработчик события нажатия на пункт меню "Выполнить задачу"
         private void doTaskToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listBoxResult.Items.Clear();
@@ -167,21 +179,20 @@ namespace C_sharp_Lab7
                 var (budgetCount, contractCount) = studentsList.CountStudentsWithoutBadMarksOnEachCourse();
                 if (budgetCount.Count() == 0 && contractCount.Count() == 0)
                 {
-                    MessageBox.Show("Нет неуспевающих студентов");
+                    MessageBox.Show("Нет студентов без задолженностей");
                 }
                 else
                 {
                     for (var i = 0; i < budgetCount.Length; ++i)
                     {
-                        listBoxResult.Items.Add($"{i + 1} course:      Budget: {budgetCount[i]},      Contract: {contractCount[i]}");
+                        listBoxResult.Items.Add($"{i + 1} курс: бюджет: {budgetCount[i]}, договор: {contractCount[i]}");
                     }
                     listBoxResult.Enabled = true;
                 }
             }
-
-
         }
 
+        // Обработчик события нажатия на пункт меню "Добавить студента"
         private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var form = new StudentForm();
@@ -196,6 +207,7 @@ namespace C_sharp_Lab7
                 doTaskToolStripMenuItem_Click(sender, e);
         }
 
+        // Обработчик события нажатия на пункт меню "Удалить студента"
         private void deleteStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string s = showDeleteDialog();
@@ -214,12 +226,14 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для отображения диалога удаления студента
         private static string showDeleteDialog()
         {
             var form = new FormForDelete();
             return form.ShowDialog() == DialogResult.OK ? FormForDelete.text : "";
         }
 
+        // Обработчик события изменения выбранного элемента в listBoxAllStudents
         private void listBoxAllStudents_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectedNumber = listBoxAllStudents.SelectedIndex;
@@ -240,3 +254,5 @@ namespace C_sharp_Lab7
         }
     }
 }
+
+

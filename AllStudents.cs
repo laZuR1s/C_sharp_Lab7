@@ -10,16 +10,19 @@ using System.Xml.Serialization;
 
 namespace C_sharp_Lab7
 {
+    // Класс, представляющий список всех студентов
     internal class AllStudents
     {
-
+        // Список студентов
         public List<Student> Students = new List<Student>();
 
+        // Конструктор по умолчанию
         public AllStudents()
         {
             Students = new List<Student>();
         }
 
+        // Метод для открытия текстового файла и чтения данных о студентах
         public void OpenTxtFile(string fileName)
         {
             var sr = new StreamReader(fileName);
@@ -57,6 +60,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для сохранения данных о студентах в текстовый файл
         public void SaveTxtFile(string fileName)
         {
             using (var sw = new StreamWriter(fileName))
@@ -66,6 +70,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для открытия бинарного файла и чтения данных о студентах
         public void OpenBinFile(string fileName)
         {
             var binFormatter = new BinaryFormatter();
@@ -83,9 +88,9 @@ namespace C_sharp_Lab7
             {
                 file.Close();
             }
-
         }
 
+        // Метод для сохранения данных о студентах в бинарный файл
         public void SaveBinFile(string fileName)
         {
             var binFormatter = new BinaryFormatter();
@@ -95,6 +100,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для открытия XML файла и чтения данных о студентах
         public void OpenXmlFile(string fileName)
         {
             var xmlFormatter = new XmlSerializer(typeof(List<Student>));
@@ -114,6 +120,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для сохранения данных о студентах в XML файл
         public void SaveXmlFile(string fileName)
         {
             var xmlFormatter = new XmlSerializer(typeof(List<Student>));
@@ -123,6 +130,7 @@ namespace C_sharp_Lab7
             }
         }
 
+        // Метод для подсчета количества студентов без задолженностей на каждом курсе, отдельно для бюджета и договора
         public (int[] budgetCount, int[] contractCount) CountStudentsWithoutBadMarksOnEachCourse()
         {
             int[] budgetCount = new int[4];
@@ -160,7 +168,6 @@ namespace C_sharp_Lab7
 
             return (budgetCount, contractCount);
         }
-
-
     }
 }
+
