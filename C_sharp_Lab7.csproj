@@ -102,5 +102,8 @@
   <ItemGroup>
     <Content Include="students.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Microsoft\VisualBasic\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

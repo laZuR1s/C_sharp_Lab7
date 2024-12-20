@@ -69,6 +69,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "FormForDelete";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Удалить студента";
             this.ResumeLayout(false);
             this.PerformLayout();

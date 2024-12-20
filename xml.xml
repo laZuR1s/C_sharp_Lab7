@@ -1,0 +1,563 @@
+<?xml version="1.0"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <FIO>Васильев Николай Иванович</FIO>
+    <Course>2</Course>
+    <Group>60</Group>
+    <Exams>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+    </Exams>
+    <EducationForm>Contract</EducationForm>
+  </Student>
+  <Student>
+    <FIO>Морозова Елена Петровна</FIO>
+    <Course>2</Course>
+    <Group>70</Group>
+    <Exams>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+    </Exams>
+    <EducationForm>Budget</EducationForm>
+  </Student>
+  <Student>
+    <FIO>Федоров Михаил Алексеевич</FIO>
+    <Course>2</Course>
+    <Group>80</Group>
+    <Exams>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+    </Exams>
+    <EducationForm>Contract</EducationForm>
+  </Student>
+  <Student>
+    <FIO>Козлова Ольга Дмитриевна</FIO>
+    <Course>3</Course>
+    <Group>90</Group>
+    <Exams>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>4</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+    </Exams>
+    <EducationForm>Budget</EducationForm>
+  </Student>
+  <Student>
+    <FIO>Николаев Сергей Викторович</FIO>
+    <Course>4</Course>
+    <Group>99</Group>
+    <Exams>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Мат. Анализ</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Лин. Алгебра</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Дис. Математика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Языки прогр</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Физкультура</Subject>
+        <Mark>5</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Философия</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>История</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Экономика</Subject>
+        <Mark>3</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Социология</Subject>
+        <Mark>2</Mark>
+      </Exam>
+      <Exam>
+        <Subject>Психология</Subject>
+        <Mark>5</Mark>
+      </Exam>
+    </Exams>
+    <EducationForm>Contract</EducationForm>
+  </Student>
+</ArrayOfStudent>

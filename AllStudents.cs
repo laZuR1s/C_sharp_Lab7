@@ -116,32 +116,49 @@ namespace C_sharp_Lab7
 
         public void SaveXmlFile(string fileName)
         {
-            var xmlFormatter=new XmlSerializer(typeof(List<Student>));
+            var xmlFormatter = new XmlSerializer(typeof(List<Student>));
             using (var file = new FileStream(fileName, FileMode.OpenOrCreate))
             {
                 xmlFormatter.Serialize(file, Students);
             }
         }
 
-        public int[] CountStudentsWithoutBadMarksOnEachCourse()
+        public (int[] budgetCount, int[] contractCount) CountStudentsWithoutBadMarksOnEachCourse()
         {
-            int[] count=new int[4];
-            for(int i=0; i<count.Length; i++)  
-                count[i]=0;
-            foreach(var student in Students)
+            int[] budgetCount = new int[4];
+            int[] contractCount = new int[4];
+            for (int i = 0; i < 4; i++)
+            {
+                budgetCount[i] = 0;
+                contractCount[i] = 0;
+            }
+
+            foreach (var student in Students)
             {
                 bool isBad = false;
                 foreach (var exam in student.Exams)
                 {
-                    
                     if (exam.isBad())
+                    {
                         isBad = true;
+                        break;
+                    }
                 }
+
                 if (!isBad)
-                    count[student.Course-1]++;
+                {
+                    if (student.EducationForm == Student.EEducationForm.Budget)
+                    {
+                        budgetCount[student.Course - 1]++;
+                    }
+                    else if (student.EducationForm == Student.EEducationForm.Contract)
+                    {
+                        contractCount[student.Course - 1]++;
+                    }
+                }
             }
 
-            return count;  
+            return (budgetCount, contractCount);
         }
 
 

@@ -164,15 +164,17 @@ namespace C_sharp_Lab7
                 MessageBox.Show("Список пуст!");
             else
             {
-                var courseCount = studentsList.CountStudentsWithoutBadMarksOnEachCourse();
-                if (courseCount.Count() == 0)
+                var (budgetCount, contractCount) = studentsList.CountStudentsWithoutBadMarksOnEachCourse();
+                if (budgetCount.Count() == 0 && contractCount.Count() == 0)
                 {
-                    MessageBox.Show("Нет неуспеющих студентов");
+                    MessageBox.Show("Нет неуспевающих студентов");
                 }
                 else
                 {
-                    for (var i = 0; i < courseCount.Count(); ++i)
-                        listBoxResult.Items.Add((i + 1).ToString() + " course: " + courseCount[i]);
+                    for (var i = 0; i < budgetCount.Length; ++i)
+                    {
+                        listBoxResult.Items.Add($"{i + 1} course:      Budget: {budgetCount[i]},      Contract: {contractCount[i]}");
+                    }
                     listBoxResult.Enabled = true;
                 }
             }
@@ -220,20 +222,20 @@ namespace C_sharp_Lab7
 
         private void listBoxAllStudents_SelectedIndexChanged(object sender, EventArgs e)
         {
-            selectedNumber = listBoxAllStudents.SelectedIndex; 
-            if(selectedNumber>=0)
+            selectedNumber = listBoxAllStudents.SelectedIndex;
+            if (selectedNumber >= 0)
             {
-                var student= studentsList.Students[selectedNumber];
-                var form=new StudentForm(student);  
-                form.ShowDialog();  
-                if(form.Changed)
+                var student = studentsList.Students[selectedNumber];
+                var form = new StudentForm(student);
+                form.ShowDialog();
+                if (form.Changed)
                 {
                     studentsList.Students[selectedNumber] = StudentForm.student;
                     ShowList(selectedNumber);
                 }
                 listBoxAllStudents.SelectedIndex = -1;
-                if(listBoxResult.Items.Count > 0)
-                    doTaskToolStripMenuItem_Click(sender, e); 
+                if (listBoxResult.Items.Count > 0)
+                    doTaskToolStripMenuItem_Click(sender, e);
             }
         }
     }
